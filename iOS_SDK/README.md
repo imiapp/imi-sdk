@@ -19,7 +19,7 @@ iOS9.0之后由于隐私设置，需要配置此权限调起其他应用。
   
 <img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/1.png" width="660" />  
   
-步骤 3：设置URL Schemes。设置IMI授权成功后回调的第三方app标志。  
+步骤 3：设置URL Schemes。  
 打开工程，将工程的Bundle Identifier 设置为URL Schemes。如下图配置： 
   
 <img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/2.png" width="660" />  
@@ -27,7 +27,7 @@ iOS9.0之后由于隐私设置，需要配置此权限调起其他应用。
 <img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/3.png" width="660" />  
   
 步骤 4：导入IMI资源包（BuildIMISdk.framework）。  
-将这两个资源包导入到第三方工程中，就可以使用IMI提供的相关功能了。   
+将资源包导入到第三方工程中，就可以使用IMI提供的相关功能了。   
 
 ## 2 SDK使用说明
 
@@ -39,8 +39,8 @@ iOS9.0之后由于隐私设置，需要配置此权限调起其他应用。
 第三方APP调用自己服务器接口，获取topicId成功，调用登录或授权方法返回给createChannelReq函数，sdk开始调起IMI。  
 （4）  handler：IMI回调结果。  
 如果回调结果有值，代表IMI已经跳转回了第三方APP。此函数可以拦截到IMI返回给第三方的信息。  
-如果登录或者授权成功，IMI回调结果result为success，如果失败，error里会显示具体的失败信息。  
-如果成功，第三方APP在回调函数里向第三方服务器请求登录或授权信息。  
+如果登录或者授权成功，IMI回调结果result为success，如果失败，error里会显示具体的失败信息。  
+result为success时，代表IMI推送信息成功，第三方APP才能在回调函数里向第三方服务器请求登录或授权信息，
 
 ## 3 SDK API（详见BuildIMISdk.h） 
 方法一 ：登录（方法名为reqLogin）  
