@@ -1,4 +1,4 @@
-服务器SDK版本当前只支持Java 1.7版本，PHP版本还在整理中。
+服务器SDK版本当前支持Java 1.7+版本，PHP版本还在整理中。
 
 服务器SDK内容分为二部分SDK：
 1. Java SDK
