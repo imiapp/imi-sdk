@@ -10,4 +10,4 @@
 	server-sdk-doc-1.0.1.zip
 	
 4、sdk相关配置文件：
-	《imi配置文件》文件夹
+	IMI配置文件.zip
