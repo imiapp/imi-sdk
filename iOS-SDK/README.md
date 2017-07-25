@@ -17,14 +17,14 @@ iOS9.0之后由于隐私设置，需要配置此权限调起其他应用。
 配置后检查下是否设置成功：  
 配置成功后，plist文件应该会有这个标识。 
   
-<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/1.png" width="660" />  
+<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS-SDK/1.png" width="660" />  
   
 步骤 3：设置URL Schemes。  
 打开工程，将工程的Bundle Identifier 设置为URL Schemes。如下图配置： 
   
-<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/2.png" width="660" />  
+<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS-SDK/2.png" width="660" />  
   
-<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS_SDK/3.png" width="660" />  
+<img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS-SDK/3.png" width="660" />  
   
 步骤 4：导入IMI资源包（BuildIMISdk.framework）。  
 将资源包导入到第三方工程中，就可以使用IMI提供的相关功能了。   
