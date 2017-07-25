@@ -13,3 +13,7 @@
 ## 二、开发环境：
 
 - server-sdk-1.0.0-RELEASE-with-all-dependencies.jar是基于jdk1.7开发与编译，故引用该包的工程环境必须为jdk1.7+。
+
+## 三、Demo
+
+https://github.com/imiapp/server-demo/tree/master/java
