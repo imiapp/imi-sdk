@@ -3,7 +3,7 @@
 > 本目录为java版server-sdk配置文件目录：
 
 ## 一、目录描述：
-- “*[/META-INF/imi/imi-config.properties](./META-INF/imi/imi-config.properties)*” 为server-sdk基础信息配置文件；
+- “*[/META-INF/imi/imi-config.properties](https://github.com/imiapp/imi-sdk/blob/master/Server-SDK/Java/Server/IMI%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/META-INF/imi/imi-config.properties)*” 为server-sdk基础信息配置文件；
 - ”*[/META-INF/imi/imi-ks](https://github.com/imiapp/imi-sdk/blob/master/Server-SDK/Java/Server/IMI%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/META-INF/imi/imi-ks)*“为server-sdk 私钥KeyStore文件；
 
 ## 二、默认配置存放路径：
