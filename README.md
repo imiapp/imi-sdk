@@ -7,9 +7,9 @@
 
   当前我们对于第三方应用平台的开发支持如下：
 
-1.  Java后端平台（JDK1.7及以上）
+1. Java后端平台（JDK1.7及以上）
 2. PHP后端开发（PHP5.6及以上）
-3.  Javascript前端开发
+3. Javascript前端开发
 4. Android应用开发
 5. iOS应用开发
 
@@ -77,7 +77,7 @@
 
    - JavaScript SDK
 
-     浏览器端的JavaScript SDK开发工具包
+     浏览器端（网页版）的JavaScript SDK开发工具包
 
 2. Android-SDK
 
@@ -86,3 +86,6 @@
 3. iOS-SDK
 
    iOS系统的SDK开发工具包
+   
+4. H5-SDK
+   H5页面（包括微信公众号）的SDK开发工具包
