@@ -14,6 +14,7 @@
 5. iOS应用开发
 
   第三方APP/平台要能对接和使用IMI系统的功能，其网站或者APP需要有对应的后台服务器做支撑，并由第三方服务器和客户端二者按照各自逻辑分工协作完成。  
+     
   比如建立一个数据通信的通道，需要由第三方服务器和客户端按照下面的交互协作来完成相关的功能：  
   <img src="https://github.com/imiapp/imi-sdk/blob/master/setup_channel.png" width="660" />  
 
