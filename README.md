@@ -79,9 +79,9 @@
      服务器端的PHP SDK开发工具包
 
    - JavaScript SDK
-
-     浏览器端（网站页面版）的JavaScript SDK开发工具包
-
+   
+     浏览器端（网站页面版）的JavaScript SDK开发工具包
+ 
 2. Android-SDK
 
    Android系统的SDK开发工具包
