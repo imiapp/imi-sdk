@@ -12,8 +12,16 @@
 
 ## 二、开发环境：
 
-- server-sdk-1.0.1-RELEASE-with-all-dependencies.jar是基于jdk1.7开发与编译，故引用该包的工程环境必须为*jdk1.7+*。
+- server-sdk-x.x.x-RELEASE-with-all-dependencies.jar是基于jdk1.7开发与编译，故引用该包的工程环境必须为*jdk1.7+*。
 
 ## 三、Demo
 
 https://github.com/imiapp/server-demo/tree/master/java
+
+## 四、版本日志
+
+  | 版本号   | 版本描述                                     |
+  | ----- | ---------------------------------------- |
+  | 1.0.0 | 基础版本发布                                   |
+  | 1.0.1 | 去掉获取授权信息接口`IMIAuthorizationRouter.getAuthorizationInfo()`的回调推送授权信息方式，改为直接`AuthorizationInfo`中返回 |
+  | 1.0.2 | 创建通信通道接口`IMIAuthorizationRouter.createChannel()`的返回信息`ChannelInfo`中添加生成二维码的原始数据信息属性`qrData`，方便前端直接用于生成二维码 |
