@@ -47,11 +47,13 @@ website是网站启动app的标志，scope类型区分授权或者登陆，topic
 
 ## 4 Demo
 
-详情见示例demo：demo.html5。
+详情见示例demo：
+
+demo.html5
 
 ## 5 微信公众号
 
-请引导用户使用“在浏览器中打开”方式打开
+请引导用户使用“在浏览器中打开”方式重新打开demo.html5
 
 
 
