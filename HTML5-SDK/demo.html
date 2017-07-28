@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>app</title>
+</head>
+<body>
+<!--获取参数拼接成url 调起app-->
+<button  id="app">打开我的app</button>
+<div id="result" style="height: 100px">
+    <!--<ul><li><span>姓名</span><span></span></li><li><span>topicId</span><span></span></li><li><span>scope</span><span></span></li></ul>-->
+</div>
+</body>
+<script src=SDK/js-sdk.js></script>
+<script src=SDK/zepto.min.js></script>
+<script>
+    
+    /*跳转到app*/
+    app.onclick=function () {
+        var result= getTopicId('http://172.16.192.101:9110/imi/createChannel','2.0.5','snsapi_info');
+
+        topicId=result['topicId'];
+        scope=result['scope'];
+
+        var url = "WFVportAllowLogin://vportAllowLogin/website=1&scope="+scope+"&v=2&topicId="+topicId+"&backUrl=http://applauncher.service.azurenet.cn:8160/capp.html?topicId="+topicId;
+        var app =document.getElementById("app");
+
+        window.location.href = url;
+    }
+    /*获取参数*/
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("/");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    var Request = new Object();
+    var u = navigator.userAgent;
+    /*ios*/
+    if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+        var serInt= setInterval(function () {
+            /*获取路径上的参数topicId */
+            Request = GetRequest();
+            ctopicId = Request['topicId'];
+            if(ctopicId){
+                var res= pullData("http://172.16.192.101:9110/imi/getAuthorizationInfo",ctopicId,"snsapi_info");
+                var html = "<ul><li><span>姓名:</span><span>"+res['userName']+"</span></li><li><span>手机号:</span><span>"+res['mobile']+"</span></li></ul>";
+                $("#result").html(html);
+                if(res['userName']&&res['mobile']){
+                    clearInterval(serInt);
+                }
+            }
+        },2000)
+    }
+
+    /*Android*/
+    if(u.indexOf('Android') > -1 || u.indexOf('Adr') > -1){
+        var AsetInt = setInterval(function () {
+            var res= pullData("http://172.16.192.101:9110/imi/getAuthorizationInfo",topicId,"snsapi_info");
+//            alert(res);
+            if(res!=""){
+                var html = "<ul><li><span>姓名:</span><span>"+res['userName']+"</span></li><li><span>手机号:</span><span>"+res['mobile']+"</span></li></ul>";
+                $("#result").html(html);
+                clearInterval(AsetInt);
+            }
+        },2000)
+   }
+
+
+</script>
+</html>
