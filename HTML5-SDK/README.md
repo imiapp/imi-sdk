@@ -24,13 +24,18 @@ website是网站启动app的标志，scope类型区分授权或者登陆，topic
 
 ## 2 SDK使用说明
 
-步骤一：导入js-sdk.js文件，调用getTopicId（'http://172.16.192.101:9100/imi/createChannel'， ‘version’，‘scope’）函数，传入topicUrl, version, scope三个参数 获得返回的topicId，scope。
+步骤一：导入js-sdk.js文件，调用getTopicId（'http://172.16.192.101:9110/imi/createChannel'， ‘version’，‘scope’）函数，传入topicUrl, version, scope三个参数 获得返回的topicId，scope。
 
 步骤二：监听app跳转回网页，在网页中拿到url路径上的topicId，作为参数调用pullData接口（"http://172.16.192.101:9110/imi/getAuthorizationInfo"， topicId，scope）。 scope同步骤一的scope，【参数信息详细看js-sdk.js】,获取返回的信息，展示需要的信息。
 
 ## 3 SDK API 
 
-补充中...
+3.1. js-sdk中包含两个主要函数：
+函数一：getTopicId，是获取topicId等信息用的函数。
+函数二：pullData函数，IMI授权完成后，可以获取到授权用户的相关信息。
+
+3.2. zepto.min.js。
+手机端使用的jq文件。
 
 ## 4 Demo
 
