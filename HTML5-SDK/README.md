@@ -42,7 +42,8 @@ website是网站启动app的标志，scope类型区分授权或者登陆，topic
   IMI授权完成后，可以获取到授权用户的相关信息。
 
 3.2. zepto.min.js  
-手机端使用的jq文件。
+
+手机端使用的jquery文件。
 
 ## 4 Demo
 
