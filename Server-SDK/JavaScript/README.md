@@ -19,7 +19,7 @@
 
 - 兼容性更好的实现方式，可以参考 https://github.com/davidshimjs/qrcodejs
 
-## 五、SCRIPT5009: “JSON”未定义
+## 五、解决在IE浏览器下报错：SCRIPT5009: “JSON”未定义
 
 - 在代码中引入json2.js文件  
  ```xml
