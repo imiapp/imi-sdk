@@ -1,6 +1,6 @@
 # JavaScript
 
-> 本目录为页面版JavaScript目录：
+> 本目录为页面版JavaScript demo程序目录：
 
 ## 一、目录描述：
 
@@ -13,7 +13,7 @@
 
 ## 三、Demo
 
-vport.js
+  https://github.com/imiapp/imi-sdk/blob/master/Server-SDK/JavaScript/vport.js
 
 ## 四、JavaScript实现的二维码显示的兼容性问题
 
