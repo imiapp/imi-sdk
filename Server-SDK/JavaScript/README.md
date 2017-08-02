@@ -21,5 +21,11 @@
 
 ## 五、SCRIPT5009: “JSON”未定义
 
-- 引入json2.js文件  
-  https://github.com/douglascrockford/JSON-js
+- 在代码中引入json2.js文件  
+ ```xml
+    if (typeof JSON == 'undefined') {  
+        $('head').append($("<script type='text/javascript' src='"+ context.value + "/js/common/json2.js'>"));  
+    }
+```
+- json2.js文件下载地址  
+https://github.com/douglascrockford/JSON-js
