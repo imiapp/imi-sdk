@@ -15,14 +15,17 @@
 IMIAPI imiapiFactory = IMIAPIFactory.createIMIAPI(MainActivity.this, true);
 
 方法一 ：登录（方法名为reqLogin）
+
 imiapiFactory.reqLogin(name, MainActivity.this);
 
 传入参数为第三方APP名称和上下文对象。
 
 方法二 ：授权（方法名为reqAuthorize）
+
 imiapiFactory.reqAuthorize(scope, name, ReservationActivity.this);
 
 参数说明：
+
 scope为第三方授权想要拿到的数据类型， snsapi_info为登录信息，snsapi_idcard为身份证信息，支持单传单取和多传多取，多传时候多个字符串用，隔开。
 然后是传入第三方APP名称和上下文对象。
 
