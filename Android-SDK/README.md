@@ -10,9 +10,24 @@
 
 ### 2 SDK API
 
-方法一 ：登录（方法名为reqLogin）  
-方法二 ：授权（方法名为reqAuthorize）  
-方法三： 检查IMI的安装（方法名为isIMIAppInstalled）  
+调用API之前先实例化，只传入上下文，也可以选择开启日志输出，LOG打印默认为关闭状态。
+IMIAPI imiapiFactory = IMIAPIFactory.createIMIAPI(MainActivity.this, true);
+
+方法一 ：登录（方法名为reqLogin）
+imiapiFactory.reqLogin(name, MainActivity.this);
+传入参数为第三方APP名称和上下文对象。
+
+方法二 ：授权（方法名为reqAuthorize）
+imiapiFactory.reqAuthorize(scope, name, ReservationActivity.this);
+参数说明：
+scope为第三方授权想要拿到的数据类型， snsapi_info为登录信息，snsapi_idcard为身份证信息，支持单传单取和多传多取，多传时候多个字符串用，隔开。
+然后是传入第三方APP名称和上下文对象。
+
+注意事项：
+登录授权操作成功后（IMI弹框消失）第三方是在 回调onActivityResult方法里面调用自己服务端的接口获取。
+
+方法三： 检查IMI的安装（方法名为isIMIAppInstalled）
+用于判断IMI是否安装，第三方需给出必要提示，在登录授权操作之前。
 
 ### 3 Demo
 
