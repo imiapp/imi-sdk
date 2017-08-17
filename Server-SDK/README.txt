@@ -3,5 +3,6 @@
 服务器SDK内容分为二部分SDK：
 1. Java SDK
 2. JavaScript SDK
+3. PHP SDK
 
 完整的功能需要网页和服务器逻辑一起完成。
