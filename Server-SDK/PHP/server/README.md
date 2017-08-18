@@ -1,9 +1,9 @@
 本SDK实现的功能是从服务器获取通信topicId和读取jwt文件。本sdk内已实现jwt的验签功能。
 
-开发准备：
+## 开发准备
 	1：需要在php服务器端载入keystore，sign两个类库，安装方式请参照具体类库内的README.md文件。
 
-开发DEMO：
+## 开发DEMO
 	开发demo请参照test.php
 	demo说明：	
 	1：首先要加载lib/jwt.class.php。
