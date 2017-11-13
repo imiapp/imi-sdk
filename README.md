@@ -10,8 +10,8 @@
 1. Java后端平台（JDK1.7及以上）
 2. PHP后端开发（PHP5.6及以上）
 3. Javascript前端开发
-4. Android应用开发
-5. iOS应用开发
+4. Android应用开发（Android 5.0及以上）
+5. iOS应用开发（iOS 9.0及以上）
 
   第三方APP/平台要能对接和使用IMI系统的功能，其网站或者APP需要有对应的后台服务器做支撑，并由第三方服务器和客户端二者使用相关的SDK按照各自逻辑分工协作完成：  
   <img src="https://github.com/imiapp/imi-sdk/blob/master/setup_channel.png" width="660" />  
