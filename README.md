@@ -14,6 +14,9 @@
 5. iOS应用开发（iOS 9.0及以上）
 
   第三方APP/平台要能对接和使用IMI系统的功能，其网站或者APP需要有对应的后台服务器做支撑，并由第三方服务器和客户端二者使用相关的SDK按照各自逻辑分工协作完成：  
+  1. 从APP数据交互的角度来看整个过程，第三方APP和IMI APP是一种直接数据交互的过程（背后通过Mapping Server和IMI系统的服务支撑）
+  <img src="https://github.com/imiapp/imi-sdk/blob/master/app_interactive_represent.png" width="660" />  
+  2. 从服务器数据交互的角度来看整个过程，第三方服务器和IMI服务器之间的数据交互通过Mapping Server来完成
   <img src="https://github.com/imiapp/imi-sdk/blob/master/setup_channel.png" width="660" />  
 
 ##### 
