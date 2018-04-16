@@ -16,12 +16,11 @@
   第三方APP/平台要能对接和使用IMI系统的功能，其网站或者APP需要有对应的后台服务器做支撑，并由第三方服务器和客户端二者使用相关的SDK按照各自逻辑分工协作完成：  
   
   1. 从第三方服务器的角度来看整个过程，第三方服务器是和IMI服务器之间通过交互来完成数据交互过程
-  <img src="https://github.com/imiapp/imi-sdk/blob/master/data_channel_flow.png" width="660" /> 
   <img src="https://github.com/imiapp/imi-sdk/blob/master/setup_channel.png" width="660" /> 
   2. 但是实际上整个数据交互过程是由APP主导完成的，背后的IMI服务器为二者提供了数据交互服务
   <img src="https://github.com/imiapp/imi-sdk/blob/master/app_interactive_represent.png" width="660" />  
-  
- 
+  <img src="https://github.com/imiapp/imi-sdk/blob/master/data_channel_flow.png" width="660" /> 
+   
 
 ##### 
 
