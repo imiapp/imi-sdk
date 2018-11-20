@@ -28,10 +28,14 @@ iOS9.0之后由于隐私设置，需要配置此权限调起其他应用。
 <img src="https://raw.githubusercontent.com/imiapp/imi-sdk/master/iOS-SDK/3.png" width="660" />  
 提示：如果第三方app更新了Bundle Identifier，相应的URL Schemes也需要修改，两者要保持一致。
   
+  
 步骤 4：导入IMI资源包（BuildIMISdk.framework）。  
 将资源包导入到第三方工程中，就可以使用IMI提供的相关功能了。
+
+
 步骤 5：一定要阅读sdk中所有函数方法的注释，在BuildIMISdk.h文件中，这里简单介绍下sdk中方法的使用：
 函数一：+(instancetype _Nullable )sharedInstance;单例对象，在整个程序中只存在一个对象，节省内存资源，提高运行效率。
+
 
 ## 2 SDK使用说明
 
