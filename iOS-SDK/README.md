@@ -2,7 +2,7 @@
 
 ## 1 环境配置
 #### 使用场景：第三方APP使用IMI APP，进行登录或者授权操作。第三方app需要按照以下步骤配置：
-步骤 1：添加第三方依赖库:AFNetworking. 可以使用我方提供的资源包，导入到工程项目中使用；也可以通过CocoaPods集成。
+步骤 1：添加第三方依赖库:AFNetworking. 可以使用我方demo中提供的资源包AFNetworking，导入到工程项目中使用；也可以通过CocoaPods集成。
 
 步骤 2：设置白名单权限，以便调起IMI应用。  
 配置代码如下：
@@ -53,7 +53,9 @@ demo中的方法名为- (void)postTopicIDparams:(NSDictionary*)params success:(v
 
 （4） sdk中的方法的使用和介绍：
 方法一：+(instancetype _Nullable )sharedInstance;单例对象：在整个程序中只存在一个对象，节省内存资源，提高运行效率。
+
 方法二：- (BOOL)isIMIinstalled;检查用户是否安装了IMI APP：安装返回YES，否则返回NO。
+
 方法三：- (void)reqLogin:(NSString *_Nullable)name andCreateChannelBlock:(createChannelBlock _Nullable )createChannelReq  andIMIResponseHandler:(nullable handlerBlock)handler;使用IMI登录，可以获取IMI用户的用户名和电话号码。
 
 参数介绍：
