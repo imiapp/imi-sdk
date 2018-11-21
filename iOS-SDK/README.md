@@ -52,6 +52,7 @@ demo中的方法名为- (void)postTopicIDparams:(NSDictionary*)params success:(v
 第三方APP调用自己服务器接口，获取topicId成功，调用登录或授权方法返回给createChannelReq函数，sdk开始调起IMI。
 
 （4） sdk中的方法的使用和介绍：
+
 方法一：+(instancetype _Nullable )sharedInstance;单例对象：在整个程序中只存在一个对象，节省内存资源，提高运行效率。
 
 方法二：- (BOOL)isIMIinstalled;检查用户是否安装了IMI APP：安装返回YES，否则返回NO。
