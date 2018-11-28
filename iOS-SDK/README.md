@@ -70,7 +70,7 @@ name:第三方app的名称；
 andCreateChannelBlock:这个block需要第三方app向sdk：return也就是传递topicid。sdk拿到topicid后向IMI请求授权数据。
 andIMIResponseHandler:授权成功或者失败的回调。成功后获取到的数据是json数据，解析展示即可。
        
-方法五：- (void)IMI_HandleBackUrl:(NSString *_Nullable)url;IMI授权完成后的回调函数。需要需要在application: openURL方法实现。  
+方法五：此方法必须实现：- (void)IMI_HandleBackUrl:(NSString *_Nullable)url;IMI授权完成后的回调函数。需要需要在application: openURL方法实现。  
 如果回调结果有值，代表IMI已经跳转回了第三方APP。此函数可以拦截到IMI返回给第三方的信息。  
 如果登录或者授权成功，IMI回调结果result为success，如果失败，error里会显示具体的失败信息。  
 result为success时，代表IMI推送信息成功，第三方APP才能在回调函数里向第三方服务器请求登录或授权信息，
